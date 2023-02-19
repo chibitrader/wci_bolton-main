@@ -1,0 +1,137 @@
+@font-face {
+  font-family: avenir;
+  src: url('../public/fonts/Avenir-Heavy-05.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: avenir;
+  src: url('../public/fonts/Avenir-Medium-09.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: avenir;
+  src: url('../public/fonts/Avenir-Light-07.ttf');
+  font-weight: 300;
+}
+
+$h1-size: 1.6rem;
+
+:root {
+  --page-padding: 1.5rem;
+  --border-main: 2.2rem;
+  --border-small: 10rem;
+  --blur-strong: blur(20px);
+  --blur-soft: blur(10px);
+  --blur-bg: rgba(255,255,255, 0.1);
+  --blur-bg-dark: rgba(0,0,0, 0.1);
+  --shadow: 0 0 .6rem rgba(0,0,0, 0.05);
+  --shadow-small: 0 0 .1rem rgba(0,0,0, 0.1);
+  --padding-bar: 0.6rem 3rem;
+  --font-white: rgba(#fff, 0.88);
+}
+
+.bar {
+  background-color: var(--blur-bg);
+  padding: var(--padding-bar);
+  border-radius: var(--border-main);
+  backdrop-filter: var(--blur-soft);
+  box-shadow: var(--shadow-small);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  color: rgba(#fff, 0.88);
+  font-family: avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  background-color: black;
+}
+
+.body {
+  // position: relative;
+
+  .bg-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  
+    img {
+      height: auto !important;
+      width: 100vw !important;
+    }
+  
+    .bg-tint {
+      background-color: rgba(0,0,0, 0.7);
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+h1 { font-size: $h1-size; }
+// h2 { font-size: calc($h1-size / (32 / 24)); }
+// h3 { font-size: calc($h1-size / (32 / 18.72)); }
+// h4 { font-size: calc($h1-size / (32 / 16)); }
+// h5 { font-size: calc($h1-size / (32 / 13.28)); }
+// h6 { font-size: calc($h1-size / (32 / 10.72)); }
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  position: relative !important;
+  width: fit-content !important;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --text-colour: white;
+//   }
+
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     // color: white;
+//   }
+// }
+
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     --text-colour: black;
+//   }
+
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     // color: white;
+//   }
+// }

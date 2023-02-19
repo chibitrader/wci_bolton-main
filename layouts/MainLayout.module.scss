@@ -1,0 +1,20 @@
+.title {
+    position: fixed;
+    border-radius: 0 var(--border-main) var(--border-main) 0;
+    padding: 0.3rem 3rem;
+    box-shadow: var(--shadow);
+    width: 15rem;
+    text-align: right;
+}
+
+.page {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    z-index: 5;
+}
+
+.main {
+    padding: 0 15rem;
+    width: 100vw;
+    padding-top: 8rem;
+}

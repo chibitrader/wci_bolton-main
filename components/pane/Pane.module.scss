@@ -1,0 +1,42 @@
+.pane {
+    width: 80%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--blur-bg);
+    padding: 1.35rem 1.35rem;
+    border-radius: var(--border-main);
+    backdrop-filter: var(--blur-strong);
+    box-shadow: var(--shadow-small);
+}
+
+.topWrap {
+    display: flex;
+    justify-content: flex-end;
+
+    .closeBtn {
+        $size: 2.6rem;
+        position: absolute;
+    
+        border-radius: 11rem;
+        border: none;
+        background-color: rgba(#000, 0.3);
+        width: $size;
+        height: $size;
+        color: var(--font-white);
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+.clickable {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.clickable:hover {
+    opacity: 0.8;
+    background-color: rgba(#000, 0.1);
+}

@@ -1,0 +1,39 @@
+.header {
+    // height: 4rem;
+    padding: calc(var(--page-padding) / 2.5 ) var(--page-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .logoWrap {
+        display: inline-block;
+
+        img {
+            width: 10rem !important;
+        }
+    }
+
+    nav {
+        display: inline-block;
+        justify-self: flex-end;
+        background-color: var(--blur-bg);
+        padding: var(--padding-bar);
+        border-radius: var(--border-main);
+        backdrop-filter: var(--blur-soft);
+        box-shadow: var(--shadow);
+
+        a {
+            margin-right: 2.6rem;
+            font-weight: 500;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+}
